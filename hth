@@ -1,5 +1,4 @@
 #!/bin/bash
-
 random_num() {
     local beg=1
     local end=100
