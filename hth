@@ -10,3 +10,13 @@ while true; do
         echo "1 to 100"
         continue
     fi
+
+    if [ "$guess" -lt "$x" ]; then
+        echo "The number is greater"
+    elif [ "$guess" -gt "$x" ]; then
+        echo "The number is less"
+    else
+        echo "You guessed the number $x!"
+        break
+    fi
+done
