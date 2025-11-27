@@ -1,1 +1,8 @@
+#!/bin/bash
 
+random_num() {
+    local beg=1
+    local end=100
+    echo $((RANDOM % (end - beg + 1) + beg))
+}
+x=$(random_num)
